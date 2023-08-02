@@ -157,6 +157,17 @@ h4 {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    html {
+        color: #F0F0F0;
+        background-color: #202020;
+    }
+    .card {
+        background-color: #404040;
+        border-color: #808080;
+    }
+}
+
 #loader-outer {
     position: fixed;
     top: 50%;
