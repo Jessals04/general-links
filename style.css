@@ -151,9 +151,14 @@ h4 {
         scale: 65%;
     }
 
-    .cards {
-        flex-direction: column;
-        scale: 110%;
+    #cards {
+        gap: 0;
+    }
+
+    .card {
+        scale: 65%;
+        width: 125%;
+        margin: 0;
     }
 }
 
