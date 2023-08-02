@@ -39,7 +39,10 @@
                         <h3>IT Helpdesk</h3>
                     </div>
 
-                    <div class="card" id="card2-closed" onclick="flex('opened-card-outer')">
+                    <div class="card" id="card2-closed" onclick="{
+                                                                    document.body.classList.add('no-scroll')
+                                                                    flex('opened-card-outer')
+                                                                 }">
                         <img src="assets/icons/react-icons/md/MdEditCalendar.png" alt="booking">
                         <h3>Bookings</h3>
                     </div>
@@ -61,7 +64,10 @@
                     </div>
                 </div>
 
-                <div id="opened-card-outer" class="fade-in" onclick="hide('opened-card-outer')">
+                <div id="opened-card-outer" class="fade-in" onclick="{
+                                                                        document.body.classList.remove('no-scroll')
+                                                                        hide('opened-card-outer')
+                                                                     }">
                     <div id="opened-card">
                         <div class="sub-bookings">
                             <div class="sub-booking" onclick="{

@@ -1,3 +1,7 @@
+html {
+    transition: 500ms;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -62,11 +66,12 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 50%;
+    padding: 100vh;
     display: none;
     margin: auto;
     justify-content: center;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 #opened-card {
@@ -95,7 +100,7 @@ section {
     text-align: center;
     width: 160px;
     height: 100px;
-    transition: 500ms;
+    transition: 150ms;
 }
 
 .card:hover {
@@ -140,6 +145,16 @@ h4 {
     font-size: smaller;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
+body.no-scroll {
+    position: fixed;
+    left: -8px;
+    width: 100%;
+}
+
 @media all and (max-width: 675px) {
     .logo-and-title {
         scale: 80%;
@@ -159,6 +174,19 @@ h4 {
         scale: 65%;
         width: 125%;
         margin: 0;
+    }
+    
+    .card:hover {
+        scale: 75%;
+    }
+
+    #opened-card {
+        width: 225px;
+    }
+
+    .sub-bookings {
+        flex-wrap: wrap;
+        translate: 12%;
     }
 }
 
