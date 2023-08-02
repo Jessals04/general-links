@@ -13,85 +13,135 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-        <div class="logo-and-title">
+        <section id="logo-and-title">
             <img id="LAGS-crest" src="assets/LAGS-crest.png" alt="LAGS-crest">
 
             <div>
-                <h1>Lindisfarne Anglican Grammar School</h1>
-                <h2>General Links</h2>
+                <h1>Lindisfarne Portal</h1>
+                <!-- <h2>General Links</h2> -->
             </div>
-        </div>
+        </section>
 
-        <div class="cards-outer">
-            <div id="cards">
-                <div class="card" onclick="{
-                                            flex('loader-outer')
-                                            window.location.href='https://google.com';
-                                           }">
-                    <img src="assets/icons/react-icons/md/MdOutlineComputer.png" alt="computer">
-                    <h3>IT Helpdesk</h3>
-                </div>
+        <section>
+            <div class="section-title">
+                <h2>Services</h2>
+                <div class="divider"></div>
+            </div>
 
-                <div class="card" id="card2-closed" onclick="flex('opened-card-outer')">
-                    <img src="assets/icons/react-icons/md/MdEditCalendar.png" alt="booking">
-                    <h3>Bookings</h3>
-                </div>
-
-                <div class="card" onclick="{
-                                            flex('loader-outer')
-                                            window.location.href='https://google.com';
+            <div class="cards-outer">
+                <div id="cards">
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://google.com';
                                             }">
-                    <img src="assets/icons/react-icons/md/MdOutlineCleaningServices.png" alt="cleaning">
-                    <h3>Cleaning Request</h3>
+                        <img src="assets/icons/react-icons/md/MdOutlineComputer.png" alt="computer">
+                        <h3>IT Helpdesk</h3>
+                    </div>
+
+                    <div class="card" id="card2-closed" onclick="flex('opened-card-outer')">
+                        <img src="assets/icons/react-icons/md/MdEditCalendar.png" alt="booking">
+                        <h3>Bookings</h3>
+                    </div>
+
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://google.com';
+                                                }">
+                        <img src="assets/icons/react-icons/md/MdOutlineCleaningServices.png" alt="cleaning">
+                        <h3>Cleaning Request</h3>
+                    </div>
+
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://google.com';
+                                            }">
+                        <img src="assets/icons/react-icons/md/MdOutlineBuildCircle.png" alt="maintenance">
+                        <h3>Buildings, Grounds and Facilities</h3>
+                    </div>
                 </div>
 
-                <div class="card" onclick="{
-                                            flex('loader-outer')
-                                            window.location.href='https://google.com';
-                                           }">
-                    <img src="assets/icons/react-icons/md/MdOutlineBuildCircle.png" alt="maintenance">
-                    <h3>Buildings, Grounds and Facilities</h3>
-                </div>
-            </div>
-
-            <div id="opened-card-outer" class="fade-in" onclick="hide('opened-card-outer')">
-                <div id="opened-card">
-                    <div class="sub-bookings">
-                        <div class="sub-booking" onclick="{
-                                                            flex('loader-outer')
-                                                            window.location.href='https://google.com';
-                                                          }">
-                            <img src="assets/icons/react-icons/md/MdOutlineDirectionsBus.png" alt="bus">
-                            <h4>Bus Booking</h4>
-                        </div>
-                        <div class="sub-booking" onclick="{
-                                                            flex('loader-outer')
-                                                            window.location.href='https://google.com';
-                                                          }">
-                            <img src="assets/icons/react-icons/md/MdOutlineDirectionsCar.png" alt="car">
-                            <h4>Car Booking</h4>
-                        </div>
-                        <div class="sub-booking" onclick="{
-                                                            flex('loader-outer')
-                                                            window.location.href='https://google.com';
-                                                          }">
-                            <img src="assets/icons/react-icons/md/MdOutlineDirectionsBoat.png" alt="boat">
-                            <h4>Boat House</h4>
-                        </div>
-                        <div class="sub-booking" onclick="{
-                                                            flex('loader-outer')
-                                                            window.location.href='https://google.com';
-                                                          }">
-                            <img src="assets/icons/react-icons/md/MdOutlineEvent.png" alt="event">
-                            <h4>Event Booking</h4>
+                <div id="opened-card-outer" class="fade-in" onclick="hide('opened-card-outer')">
+                    <div id="opened-card">
+                        <div class="sub-bookings">
+                            <div class="sub-booking" onclick="{
+                                                                flex('loader-outer')
+                                                                window.location.href='https://google.com';
+                                                            }">
+                                <img src="assets/icons/react-icons/md/MdOutlineDirectionsBus.png" alt="bus">
+                                <h4>Bus Booking</h4>
+                            </div>
+                            <div class="sub-booking" onclick="{
+                                                                flex('loader-outer')
+                                                                window.location.href='https://google.com';
+                                                            }">
+                                <img src="assets/icons/react-icons/md/MdOutlineDirectionsCar.png" alt="car">
+                                <h4>Car Booking</h4>
+                            </div>
+                            <div class="sub-booking" onclick="{
+                                                                flex('loader-outer')
+                                                                window.location.href='https://google.com';
+                                                            }">
+                                <img src="assets/icons/react-icons/md/MdOutlineDirectionsBoat.png" alt="boat">
+                                <h4>Boat House</h4>
+                            </div>
+                            <div class="sub-booking" onclick="{
+                                                                flex('loader-outer')
+                                                                window.location.href='https://google.com';
+                                                            }">
+                                <img src="assets/icons/react-icons/md/MdOutlineEvent.png" alt="event">
+                                <h4>Event Booking</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div id="loader-outer">
-                <div class="loader"></div>
+        <section>
+            <div class="section-title">
+                <h2>Apps</h2>
+                <div class="divider"></div>
             </div>
+
+            <div class="cards-outer">
+                <div id="cards">
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://mail.google.com';
+                                               }">
+                        <img src="assets/icons/gmail-icon.png" alt="computer">
+                        <h3>Gmail</h3>
+                    </div>
+
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://tassweb.lindisfarne.nsw.edu.au/kiosk/index.cfm';
+                                                }">
+                        <img src="assets/icons/teachers-kiosk-icon.png"" alt="booking">
+                        <h3>Teacher's Kiosk</h3>
+                    </div>
+
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://tassweb.lindisfarne.nsw.edu.au/tassweb/index.cfm';
+                                                }">
+                        <img src="assets/icons/tass-web-icon.png" alt="cleaning">
+                        <h3>Tass.web</h3>
+                    </div>
+
+                    <div class="card" onclick="{
+                                                flex('loader-outer')
+                                                window.location.href='https://teach.lindisfarne.nsw.edu.au/welcome';
+                                            }">
+                        <img src="assets/icons/SEQTA-Teach-icon.webp" alt="maintenance">
+                        <h3>SEQTA Teach</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="loader-outer">
+            <div class="loader"></div>
         </div>
     </body>
 </html>

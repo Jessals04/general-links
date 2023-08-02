@@ -8,12 +8,12 @@ body {
 }
 
 #LAGS-crest {
-    width: 65px;
+    width: 60px;
 }
 
-.logo-and-title {
+#logo-and-title {
     display: flex;
-    gap: 40px;
+    gap: 35px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -26,6 +26,27 @@ h1 {
 h2 {
     font-size: larger;
     color: gray;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+}
+
+.section-title h2 {
+    padding-left: 15px;
+}
+
+.section-title {
+    display: flex;
+    gap: 12px;
+}
+
+.divider {
+    border: 2px solid rgba(203, 203, 203, 0.80);
+    width: 80%;
+    height: 0px;
+    margin: auto;
 }
 
 #cards {
@@ -79,25 +100,6 @@ h2 {
 
 .card:hover {
     scale: 105%;
-    cursor: pointer;
-}
-
-#card2-opened {
-    display: none;
-    height: auto;
-    cursor: default;
-}
-
-.arrow {
-    transform: translateY(-10px);
-    border-radius: 12px;
-    padding-left: 50px;
-    padding-right: 50px;
-    transition: 150ms;
-}
-
-.arrow:hover {
-    background-color: #F0F0F0;
     cursor: pointer;
 }
 
