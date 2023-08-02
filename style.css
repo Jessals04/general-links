@@ -1,0 +1,217 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 45px;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+#LAGS-crest {
+    width: 65px;
+}
+
+.logo-and-title {
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: larger;
+    color: gray;
+}
+
+#cards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+#opened-card-outer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50%;
+    display: none;
+    margin: auto;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+#opened-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 6px;
+    border: 1px solid rgba(203, 203, 203, 0.80);
+
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(203, 203, 203, 0.80);
+    background: rgba(227, 227, 227, 0.90);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    padding: 20px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(203, 203, 203, 0.80);
+    background: rgba(227, 227, 227, 0.90);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 160px;
+    height: 100px;
+    transition: 500ms;
+}
+
+.card:hover {
+    scale: 105%;
+    cursor: pointer;
+}
+
+#card2-opened {
+    display: none;
+    height: auto;
+    cursor: default;
+}
+
+.arrow {
+    transform: translateY(-10px);
+    border-radius: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: 150ms;
+}
+
+.arrow:hover {
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+img {
+    margin: auto;
+    width: 35px;
+}
+
+h3 {
+    font-size: medium;
+}
+
+.sub-bookings {
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sub-bookings img {
+    width: 20px;
+}
+
+.sub-booking {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 150ms;
+    width: 65px;
+}
+
+.sub-booking:hover {
+    background-color: #F0F0F0;
+    scale: 105%;
+}
+
+h4 {
+    font-size: smaller;
+}
+
+@media all and (max-width: 675px) {
+    .logo-and-title {
+        scale: 80%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .logo-and-title {
+        scale: 65%;
+    }
+
+    .cards {
+        flex-direction: column;
+        scale: 110%;
+    }
+}
+
+#loader-outer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50%;
+    display: none;
+    margin: auto;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+/* Source: https://www.w3schools.com/howto/howto_css_loader.asp */
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* ----------------------------------------------------------- */
+
+/* Source: https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
+.fade-in p {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* ----------------------------------------------------------- */
