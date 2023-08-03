@@ -6,21 +6,45 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 45px;
 
     font-family: 'Raleway', sans-serif;
 }
 
 #LAGS-crest {
     width: 60px;
+    margin: 0px;
 }
 
-#logo-and-title {
+#header {
+    position: fixed;
+    transition: height 0.3s ease-in-out;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100vw;
+    max-width: none;
+}
+
+#header-inner {
     display: flex;
-    gap: 35px;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 250ms ease-in-out;
+}
+
+#content {
+    padding-top: 125px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 h1 {
@@ -155,14 +179,8 @@ body.no-scroll {
     width: 100%;
 }
 
-@media all and (max-width: 675px) {
-    .logo-and-title {
-        scale: 80%;
-    }
-}
-
 @media all and (max-width: 480px) {
-    .logo-and-title {
+    #header-inner {
         scale: 65%;
     }
 
@@ -173,7 +191,9 @@ body.no-scroll {
     .card {
         scale: 65%;
         width: 125%;
+        height: 75%;
         margin: 0;
+        padding: 8px;
     }
     
     .card:hover {
@@ -195,6 +215,11 @@ body.no-scroll {
         color: #F0F0F0;
         background-color: #202020;
     }
+
+    #header {
+        background-color: #404040;
+    }
+
     .card {
         background-color: #404040;
         border-color: #808080;
