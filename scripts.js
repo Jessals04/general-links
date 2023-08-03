@@ -1,4 +1,4 @@
-
+// hide and show functions
 function flex( flex ) {
     document.getElementById(flex).style.display="flex";
 }
@@ -7,7 +7,7 @@ function hide( hide ) {
     document.getElementById(hide).style.display="none";
 }
 
-// When the user scrolls down 50px from the top of the document, resize the header's font size
+// header scroll animation function
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
