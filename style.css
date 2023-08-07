@@ -95,7 +95,7 @@ section {
 #user-details img {
     width: inherit;
     max-width: 40px;
-    padding: 12px;
+    padding: 18px;
     padding-right: 0;
 }
 
@@ -120,6 +120,14 @@ section {
 #user-details-text p {
     margin-top: 0;
     margin-bottom: auto;
+}
+
+#user-details-text a {
+    color: #202020;
+}
+
+#user-details-text a:hover {
+    text-decoration: none;
 }
 
 #log-out-btn {
