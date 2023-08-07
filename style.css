@@ -95,7 +95,8 @@ section {
 #user-details img {
     width: inherit;
     max-width: 40px;
-    padding: 6px;
+    padding: 12px;
+    padding-right: 0;
 }
 
 #user-details div {
@@ -106,7 +107,9 @@ section {
 #user-details-text {
     display: flex;
     flex-direction: column;
-    padding: 6px;
+    padding-right: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 #user-details-text h3 {
@@ -315,6 +318,10 @@ body.no-scroll {
         background-color: #202020;
     }
 
+    button {
+        color: #F0F0F0;
+    }
+
     #header {
         background-color: #202020;
     }
@@ -331,10 +338,16 @@ body.no-scroll {
 
     .sub-booking {
         background-color: #808080;
+        border: 1px solid #F0F0F0;
     }
     
     .sub-booking:hover {
         background-color: #838383;
+    }
+
+    .icon {
+        -webkit-filter: invert(100%); /* Safari/Chrome */
+        filter: invert(100%);
     }
 }
 
