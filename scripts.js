@@ -21,3 +21,53 @@ function scrollFunction() {
     document.getElementById("header-inner").style.scale = "65%";
   }
 }
+
+// --- User Scripts ---
+let user = {
+  "type": "student",
+  "username": "john.citizen",
+  "email": "john.citizen@lindisfarne.nsw.edu.au",
+  "given_name": "John",
+  "surname": "Citizen",
+  "services": [
+    "it_helpdesk",
+    "booking",
+    "cleaning",
+  ],
+  "apps": [
+    "gmail",
+    "seqta_learn",
+    "seqta_teach",
+    "tassweb",
+    "kiosk",
+  ],
+};
+
+window.onload = function() {loadUser(user)};
+
+function loadUser(user) {
+  document.getElementById("given-name-surname").innerHTML = user.given_name + " " + user.surname;
+  document.getElementById("email").innerHTML = user.email;
+
+  user.services.forEach(service => {
+    document.getElementById(service).style.display = "flex";
+  });
+
+  user.apps.forEach(app => {
+    document.getElementById(app).style.display = "flex";
+  });
+
+  if (user.services.includes("it_helpdesk")) {
+    document.getElementById("open-tickets").style.display = "flex";
+    document.getElementById("it_helpdesk_open_tickets").style.display = "block";
+  }
+  
+  if (
+        user.services.includes("booking")
+        || user.services.includes("cleaning")
+        || user.services.includes("maintenance")
+      ) {
+    document.getElementById("open-tickets").style.display = "flex";
+    document.getElementById("facilities_open_tickets").style.display = "block";
+  }
+}

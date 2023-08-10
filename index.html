@@ -31,9 +31,9 @@
                     <div>
                         <img class="icon" src="assets/icons/react-icons/md/MdOutlinePerson.png" alt="">
                         <div id="user-details-text">
-                            <h3>User Name</h3>
-                            <p>Email: user.name@lindisfarne.nsw.edu.au</p>
-                            <p>My Open Tickets: <a href="https://lindisfarne.freshservice.com/support/tickets" onclick="flex('loader-outer')">IT Helpdesk</a> | <a href="https://lindisfarne-facilities.freshservice.com/support/tickets" onclick="flex('loader-outer')">Facilities</a></p>
+                            <h3 id="given-name-surname"></h3>
+                            <p>Email: <span id="email"></span></p>
+                            <div id="open-tickets">My Open Tickets: <a href="https://lindisfarne.freshservice.com/support/tickets" id="it_helpdesk_open_tickets" onclick="flex('loader-outer')">IT Helpdesk</a> <a href="https://lindisfarne-facilities.freshservice.com/support/tickets" id="facilities_open_tickets" onclick="flex('loader-outer')">Facilities</a></div>
                         </div>
                     </div>
                     <button id="log-out-btn">
@@ -51,7 +51,7 @@
 
                 <div class="cards-outer">
                     <div id="cards">
-                        <div class="card" onclick="{
+                        <div class="card" id="it_helpdesk" onclick="{
                                                     flex('loader-outer')
                                                     window.location.href='mailto:helpdesk@lindisfarne.nsw.edu.au';
                                                 }">
@@ -59,7 +59,7 @@
                             <h3>IT Helpdesk</h3>
                         </div>
 
-                        <div class="card" id="card2-closed" onclick="{
+                        <div class="card" id="booking" id="card2-closed" onclick="{
                                                                         document.body.classList.add('no-scroll')
                                                                         flex('opened-card-outer')
                                                                     }">
@@ -67,7 +67,7 @@
                             <h3>Bookings</h3>
                         </div>
 
-                        <div class="card" onclick="{
+                        <div class="card" id="cleaning" onclick="{
                                                     flex('loader-outer')
                                                     window.location.href='https://lindisfarne-facilities.freshservice.com/a/catalog/request-items?category=14000057474';
                                                     }">
@@ -75,7 +75,7 @@
                             <h3>Cleaning Request</h3>
                         </div>
 
-                        <div class="card" onclick="{
+                        <div class="card" id="maintenance" onclick="{
                                                     flex('loader-outer')
                                                     window.location.href='https://lindisfarne-facilities.freshservice.com/a/catalog/request-items/24';
                                                 }">
@@ -140,36 +140,44 @@
 
                 <div class="cards-outer">
                     <div id="cards">
-                        <div class="card" onclick="{
+                        <div class="card" id="gmail" onclick="{
                                                     flex('loader-outer')
                                                     window.location.href='https://mail.google.com';
                                                 }">
-                            <img src="assets/icons/gmail-icon.png" alt="computer">
+                            <img src="assets/icons/gmail-icon.png" alt="gmail">
                             <h3>Gmail</h3>
                         </div>
 
-                        <div class="card zoom-img-200" onclick="{
+                        <div class="card zoom-img-200" id="kiosk" onclick="{
                                                     flex('loader-outer')
                                                     window.location.href='https://tassweb.lindisfarne.nsw.edu.au/kiosk/index.cfm';
                                                     }">
-                            <img src="assets/icons/teachers-kiosk-icon.png"" alt="booking">
+                            <img src="assets/icons/teachers-kiosk-icon.png"" alt="kiosk">
                             <h3>Teacher's Kiosk</h3>
                         </div>
 
-                        <div class="card zoom-img-200" onclick="{
+                        <div class="card zoom-img-200" id="tassweb" onclick="{
                                                     flex('loader-outer')
                                                     window.location.href='https://tassweb.lindisfarne.nsw.edu.au/tassweb/index.cfm';
                                                     }">
-                            <img src="assets/icons/tass-web-icon.png" alt="cleaning">
+                            <img src="assets/icons/tass-web-icon.png" alt="tassweb">
                             <h3>Tass.web</h3>
                         </div>
 
-                        <div class="card zoom-img-200" onclick="{
+                        <div class="card zoom-img-200" id="seqta_teach" onclick="{
                                                     flex('loader-outer')
-                                                    window.location.href='https://teach.lindisfarne.nsw.edu.au/welcome';
+                                                    window.location.href='https://teach.lindisfarne.nsw.edu.au';
                                                 }">
-                            <img src="assets/icons/SEQTA-Teach-icon.webp" alt="maintenance">
+                            <img src="assets/icons/SEQTA-Teach-icon.webp" alt="seqta_teach">
                             <h3>SEQTA Teach</h3>
+                        </div>
+
+                        <div class="card zoom-img-200" id="seqta_learn" onclick="{
+                                                    flex('loader-outer')
+                                                    window.location.href='https://learn.lindisfarne.nsw.edu.au';
+                                                }">
+                            <img src="assets/icons/SEQTA-Learn-icon.webp" alt="seqta_learn">
+                            <h3>SEQTA Learn</h3>
                         </div>
                     </div>
                 </div>
